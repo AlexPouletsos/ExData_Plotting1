@@ -13,9 +13,7 @@ hpcSub <- cbind(DateTime,hpcSub)
 #Making the plot
 
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Global_active_power)),
-        type="l",
-        main="Global Active Power",
-        xlab="", ylab="Global Active Power (kilowatts)"))
+        type="l", xlab="", ylab="Global Active Power (kilowatts)"))
 
 dev.copy(png, file = "plot2.png")
 dev.off()
