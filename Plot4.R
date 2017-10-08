@@ -29,7 +29,7 @@ with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Voltage)),
 #Bottom Left
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Sub_metering_1)),
         type="l", xlab="",
-        ylab="Energy Sub Metering",col="black"))
+        ylab="Energy sub metering",col="black"))
         lines(hpcSub$DateTime, as.numeric(as.character(hpcSub$Sub_metering_2)), col="red")
         lines(hpcSub$DateTime, as.numeric(as.character(hpcSub$Sub_metering_3)), col="blue")
         legend("topright",legend=names(hpc[7:9]),col=c("black","red","blue"),lty = 1,bty="n",cex=.8)
