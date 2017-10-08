@@ -12,7 +12,7 @@ hpcSub <- cbind(DateTime,hpcSub)
 
 #Making the Plot
 
-png(filename = "plot3.png", height=480, width=480)
+png(filename = "plot1.png", height=480, width=480)
 
 hist(as.numeric(as.character(hpcSub$Global_active_power)),
         main="Global Active Power", xlab="Global Active Power (kilowatts)",
