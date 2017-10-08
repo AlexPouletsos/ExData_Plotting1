@@ -15,10 +15,9 @@ hpcSub <- cbind(DateTime,hpcSub)
 png(filename = "plot3.png", height=480, width=480)
 
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Sub_metering_1)),
-        type="l", main="Global Active Power", xlab="",
-        ylab="Global Active Power (kilowatts)",col="black"))
+        type="l", xlab="", ylab="Energy sub metering", col="black"))
         lines(hpcSub$DateTime, as.numeric(as.character(hpcSub$Sub_metering_2)), col="red")
         lines(hpcSub$DateTime, as.numeric(as.character(hpcSub$Sub_metering_3)), col="blue")
-        legend("topright",legend=names(hpc[7:9]),col=c("black","red","blue"),lty = 1,cex=.7)
+        legend("topright",legend=names(hpc[7:9]),col=c("black","red","blue"),lty = 1)
 
 dev.off()
