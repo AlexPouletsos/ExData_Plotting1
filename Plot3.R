@@ -14,7 +14,7 @@ hpcSub <- cbind(DateTime,hpcSub)
 
 #Making the plot
 
-png(filename = "plot3.png", height=480, width=480)
+png(filename = "plot3.png", height=480, width=480) #saves png file to working directory
 
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Sub_metering_1)),
         type="l", xlab="", ylab="Energy sub metering", col="black"))
