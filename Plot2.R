@@ -16,7 +16,6 @@ png(filename = "plot2.png", height=480, width=480)
 
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Global_active_power)),
         type="l",
-        main="Global Active Power",
         xlab="", ylab="Global Active Power"))
 
 dev.off()
