@@ -16,25 +16,25 @@ png(filename = "plot4.png", height=480, width=480)
 
 par(mfrow=c(2,2), mar = c(4,4,2,1), oma = c(0,0,2,0))
 
-#Up Left
+#Top Left
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Global_active_power)),
         type="l",
         xlab="", ylab="Global Active Power"))
 
-#Up Right
+#Top Right
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Voltage)),
         type="l",
         xlab="datetime", ylab="Voltage"))
 
-#Down Left
+#Bottom Left
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Sub_metering_1)),
         type="l", xlab="",
-        ylab="Global Active Power (kilowatts)",col="black"))
+        ylab="Energy Sub Metering",col="black"))
         lines(hpcSub$DateTime, as.numeric(as.character(hpcSub$Sub_metering_2)), col="red")
         lines(hpcSub$DateTime, as.numeric(as.character(hpcSub$Sub_metering_3)), col="blue")
         legend("topright",legend=names(hpc[7:9]),col=c("black","red","blue"),lty = 1,bty="n",cex=.8)
 
-#Down Right
+#Bottom Right
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Global_reactive_power)),
         type="l",
         xlab="datetime", ylab="Global_reactive_ower"))
