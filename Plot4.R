@@ -32,11 +32,11 @@ with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Sub_metering_1)),
         ylab="Energy sub metering",col="black"))
         lines(hpcSub$DateTime, as.numeric(as.character(hpcSub$Sub_metering_2)), col="red")
         lines(hpcSub$DateTime, as.numeric(as.character(hpcSub$Sub_metering_3)), col="blue")
-        legend("topright",legend=names(hpc[7:9]),col=c("black","red","blue"),lty = 1,bty="n",cex=.8)
+        legend("topright",legend=names(hpc[7:9]),col=c("black","red","blue"),lty = 1,bty="n")
 
 #Bottom Right
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Global_reactive_power)),
         type="l",
-        xlab="datetime", ylab="Global_reactive_ower"))
+        xlab="datetime", ylab="Global_reactive_power"))
 
 dev.off()
