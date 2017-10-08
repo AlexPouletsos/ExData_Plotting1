@@ -13,7 +13,7 @@ hpcSub <- cbind(DateTime,hpcSub)
 #Making the plot
 
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Sub_metering_1)),
-        type="l", main="Global Active Power", xlab="",
+        type="l", xlab="",
         ylab="Global Active Power (kilowatts)",col="black"))
         lines(hpcSub$DateTime, as.numeric(as.character(hpcSub$Sub_metering_2)), col="red")
         lines(hpcSub$DateTime, as.numeric(as.character(hpcSub$Sub_metering_3)), col="blue")
