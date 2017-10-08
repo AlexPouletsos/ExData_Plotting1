@@ -14,7 +14,7 @@ hpcSub <- cbind(DateTime,hpcSub)
 
 #Making the plot
 
-png(filename = "plot4.png", height=480, width=480)
+png(filename = "plot4.png", height=480, width=480) #saves png file to working directory
 
 par(mfrow=c(2,2), mar = c(4,4,2,1), oma = c(0,0,2,0))
 
