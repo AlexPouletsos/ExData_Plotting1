@@ -12,7 +12,7 @@ hpcSub <- cbind(DateTime,hpcSub)
 
 #Making the plot
 
-png(filename = "plot3.png", height=480, width=480)
+png(filename = "plot2.png", height=480, width=480)
 
 with(hpcSub, plot(hpcSub$DateTime, as.numeric(as.character(Global_active_power)),
         type="l",
